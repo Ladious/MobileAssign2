@@ -11,4 +11,23 @@
     <string name="news">News</string>
     <string name="customer">Customer</string>
     <string name="feedback">Feedback</string>
+    <string name="title_activity_customer_details">CustomerDetails</string>
+    <string name="cpy">Company</string>
+    <string name="add">Address</string>
+    <string name="ad">Address</string>
+    <string name="egadd">No.42 Jln Malinja TBR KL</string>
+    <string name="getDirect">Get Direction</string>
+    <string name="cpyPhone">Company Phone</string>
+    <string name="egPhone">03-3456789</string>
+    <string name="repre">Representative</string>
+    <string name="egrep">Lee Jia Yi</string>
+    <string name="contactNo">Contact No</string>
+    <string name="contact">016-1234567</string>
+    <string name="pos">Position</string>
+    <string name="egpos">Manager</string>
+    <string name="email">Email</string>
+    <string name="egmail">testing@hotmail.com</string>
+    <string name="pchHistory">Purchase History</string>
+    <string name="view">View Feedback</string>
+    <string name="send">Send Feedback</string>
 </resources>
