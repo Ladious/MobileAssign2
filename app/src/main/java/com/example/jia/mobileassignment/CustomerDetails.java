@@ -34,7 +34,7 @@ public class CustomerDetails extends AppCompatActivity {
         setContentView(R.layout.activity_customer_details);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        readCustomer();
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -82,16 +82,26 @@ public class CustomerDetails extends AppCompatActivity {
 
                             for(int i=0; i < response.length();i++){
 
-                                JSONObject courseResponse = (JSONObject) response.get(i);
-                                if(){
-                                    String code = courseResponse.getString("code");
-                                    String title = courseResponse.getString("title");
-                                    String credit = courseResponse.getString("credit");
-                                    Course course = new Course();
-                                    course.setCode(code);
-                                    course.setTitle(title);
-                                    course.setCredit(credit);
-                                    caList.add(course);
+                                JSONObject customerResponse = (JSONObject) response.get(i);
+                                String id = customerResponse.getString("id");
+                                if(id.equals("1000")){
+                                    String name = customerResponse.getString("name");
+                                    String address = customerResponse.getString("address");
+                                    String phone = customerResponse.getString("phone");
+                                    String representative = customerResponse.getString("representative");
+                                    String contact = customerResponse.getString("contact");
+                                    String position = customerResponse.getString("position");
+                                    String email = customerResponse.getString("email");
+
+                                    Customer customer = new Customer();
+                                    customer.setName(name);
+                                    customer.setAddress(address);
+                                    customer.setPhone(phone);
+                                    customer.setRepresentative(representative);
+                                    customer.setContact(contact);
+                                    customer.setPosition(position);
+                                    customer.setEmail(email);
+                                    caList.add(customer);
                                 }
 
                             }
@@ -117,9 +127,9 @@ public class CustomerDetails extends AppCompatActivity {
     }
 
     private void loadCourse() {
-        final CourseAdapter adapter = new CourseAdapter(this, caList);
+        final CustomerAdapter adapter = new CustomerAdapter(this, caList);
         listViewCustomer.setAdapter(adapter);
-        Toast.makeText(getApplicationContext(), "Count :" + caList.size(), Toast.LENGTH_SHORT).show();
+       // Toast.makeText(getApplicationContext(), "Count :" + caList.size(), Toast.LENGTH_SHORT).show();
     }
 
 }
