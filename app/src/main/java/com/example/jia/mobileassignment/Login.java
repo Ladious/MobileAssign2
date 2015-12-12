@@ -1,5 +1,6 @@
 package com.example.jia.mobileassignment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -8,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 
 public class Login extends AppCompatActivity {
 
@@ -26,6 +28,10 @@ public class Login extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        Intent intent = getIntent();
+        TextView editText2 = (TextView) findViewById(R.id.editText2);
+        editText2.setText(intent.getStringExtra("ITEM"));
     }
 
     @Override

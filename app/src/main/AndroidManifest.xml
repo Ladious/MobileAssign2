@@ -24,17 +24,35 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.jia.mobileassignment.Login" />
 
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".sendCase"
             android:label="@string/title_activity_send_case"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
+
+
+        <activity
+            android:name=".MainActivity1"
+            android:label="@string/title_activity_main1" >
+        </activity>
+        <activity
+            android:name=".MainActivity2"
+            android:label="@string/title_activity_main2" >
+        </activity>
+        <activity
+            android:name=".ClientMenu"
+            android:label="@string/title_activity_client_menu"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
     </application>
 
 </manifest>
