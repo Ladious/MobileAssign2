@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/cpy"
+        android:id="@+id/textViewCompany"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="30dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="66dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewId"
+        android:layout_below="@+id/textViewDis6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/id"
+        android:textSize="10dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add"
+        android:id="@+id/textViewDis1"
+        android:layout_below="@+id/textViewCompany"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="18dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/egadd"
+        android:id="@+id/textViewAdd"
+        android:layout_below="@+id/textViewDis1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#000000"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:background="@drawable/direction"
+        android:onClick="getDirect" />
+
+    <TextView
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cpyPhone"
+        android:id="@+id/textViewDis2"
+        android:layout_below="@+id/btnDirection"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="18dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/egPhone"
+        android:id="@+id/textViewPhone"
+        android:layout_below="@+id/textViewDis2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/repre"
+        android:id="@+id/textViewDis3"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/textViewPhone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="18dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/egrep"
+        android:id="@+id/textViewRepresentative"
+        android:layout_below="@+id/textViewDis3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contactNo"
+        android:id="@+id/textViewDis4"
+        android:layout_below="@+id/textViewRepresentative"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="27dp"
+        android:textSize="18dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contact"
+        android:id="@+id/textViewContact"
+        android:layout_below="@+id/textViewDis4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pos"
+        android:id="@+id/textViewDis5"
+        android:layout_below="@+id/textViewContact"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:textSize="18dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/egpos"
+        android:id="@+id/textViewPost"
+        android:layout_below="@+id/textViewDis5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:id="@+id/textViewDis6"
+        android:layout_below="@+id/textViewPost"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="27dp"
+        android:textSize="18dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/egmail"
+        android:id="@+id/textViewEmail"
+        android:layout_below="@+id/textViewDis6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:textColor="#000000"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/view"
+            android:id="@+id/btnViewFeedback"
+            android:singleLine="false"
+            android:contextClickable="false"
+            android:layout_gravity="center_horizontal"
+            android:background="#ff0000"
+            android:textColor="#ffffff"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/textView5" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/send"
+            android:id="@+id/btnSendFeedback"
+            android:background="#ff0000"
+            android:textColor="#ffffff"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnViewFeedback"
+            android:layout_toEndOf="@+id/btnViewFeedback" />
+
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/textView6" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:text="@string/pchHistory"
+            android:id="@+id/btnHistory"
+            android:background="#ff0000"
+            android:textColor="#ffffff"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnSendFeedback"
+            android:layout_toEndOf="@+id/btnSendFeedback" />
+    </LinearLayout>
+
+</LinearLayout>
