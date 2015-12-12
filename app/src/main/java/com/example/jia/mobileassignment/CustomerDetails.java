@@ -30,10 +30,14 @@ public class CustomerDetails extends AppCompatActivity {
     List<Customer> caList;
     private ProgressDialog pDialog;
     private static String address;
+    private static int pid;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_customer_details);
+
+        Intent intent = getIntent();
+        pid = Integer.parseInt(intent.getStringExtra("ITEM"));
 
         listViewCustomer = (ListView) findViewById(R.id.listView);
         pDialog = new ProgressDialog(this);
@@ -79,7 +83,7 @@ public class CustomerDetails extends AppCompatActivity {
 
                            // for(int i=0; i < response.length();i++){
                             //pass position here
-                                JSONObject courseResponse = (JSONObject) response.get(1);
+                                JSONObject courseResponse = (JSONObject) response.get(pid);
                                 String id = courseResponse.getString("id");
                                 String name = courseResponse.getString("name");
                                 address = courseResponse.getString("address");
@@ -124,7 +128,7 @@ public class CustomerDetails extends AppCompatActivity {
     private void loadCourse() {
         final CustomerAdapter adapter = new CustomerAdapter(this, caList);
         listViewCustomer.setAdapter(adapter);
-        Toast.makeText(getApplicationContext(), "Count :" + caList.size(), Toast.LENGTH_SHORT).show();
+     //   Toast.makeText(getApplicationContext(), "Count :" + caList.size(), Toast.LENGTH_SHORT).show();
     }
 
     public void getDirect(View v){

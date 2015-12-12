@@ -47,4 +47,6 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_client_menu">ClientMenu</string>
+    <string name="title_activity_purchase_history">Purchase History</string>
+    <string name="purchaseHistory">Purchase History</string>
 </resources>

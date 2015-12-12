@@ -29,9 +29,7 @@ public class Login extends AppCompatActivity {
             }
         });
 
-        Intent intent = getIntent();
-        TextView editText2 = (TextView) findViewById(R.id.editText2);
-        editText2.setText(intent.getStringExtra("ITEM"));
+
     }
 
     @Override

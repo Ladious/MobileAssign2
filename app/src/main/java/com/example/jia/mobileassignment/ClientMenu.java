@@ -71,7 +71,7 @@ public class ClientMenu extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        final Intent intent = new Intent(this, Login.class);
+        final Intent intent = new Intent(this, CustomerDetails.class);
         listViewCustomer.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position,
@@ -80,7 +80,7 @@ public class ClientMenu extends AppCompatActivity
                 //String item = ((TextView) view).getText().toString();
                 item = String.valueOf(position);
 
-                Toast.makeText(getBaseContext(), item, Toast.LENGTH_LONG).show();
+               // Toast.makeText(getBaseContext(), item, Toast.LENGTH_LONG).show();
 
                 intent.putExtra("ITEM", item);
                 startActivity(intent);
@@ -218,7 +218,7 @@ public class ClientMenu extends AppCompatActivity
     private void loadCourse() {
         final ClientAdapter adapter = new ClientAdapter(this, caList);
         listViewCustomer.setAdapter(adapter);
-        Toast.makeText(getApplicationContext(), "Count :" + caList.size(), Toast.LENGTH_SHORT).show();
+        //Toast.makeText(getApplicationContext(), "Count :" + caList.size(), Toast.LENGTH_SHORT).show();
     }
 
 
