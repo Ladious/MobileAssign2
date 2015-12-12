@@ -31,4 +31,5 @@
     <string name="view">View Feedback</string>
     <string name="send">Send Feedback</string>
     <string name="get_course_url">http://xladious.netau.net/select_customer.php</string>
+    <string name="id">Id</string>
 </resources>

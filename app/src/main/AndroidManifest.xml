@@ -15,8 +15,6 @@
             android:name=".Login"
             android:label=""
             android:theme="@style/AppTheme.NoActionBar" >
-
-
         </activity>
         <activity
             android:name=".CustomerDetails"
@@ -25,8 +23,10 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.jia.mobileassignment.Login" />
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
