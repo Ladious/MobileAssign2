@@ -2,12 +2,16 @@ package com.example.jia.mobileassignment;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.ListView;
 import android.widget.Toast;
+
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
@@ -19,11 +23,13 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
+
 public class CustomerDetails extends AppCompatActivity {
     ListView listViewCustomer;
     List<Customer> caList;
     private ProgressDialog pDialog;
-
+    private static String address;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -72,10 +78,11 @@ public class CustomerDetails extends AppCompatActivity {
                             caList.clear();
 
                            // for(int i=0; i < response.length();i++){
-                                JSONObject courseResponse = (JSONObject) response.get(0);
+                            //pass position here
+                                JSONObject courseResponse = (JSONObject) response.get(1);
                                 String id = courseResponse.getString("id");
                                 String name = courseResponse.getString("name");
-                                String address = courseResponse.getString("address");
+                                address = courseResponse.getString("address");
                                 String phone = courseResponse.getString("phone");
                                 String representative = courseResponse.getString("representative");
                                 String contact = courseResponse.getString("contact");
@@ -118,6 +125,13 @@ public class CustomerDetails extends AppCompatActivity {
         final CustomerAdapter adapter = new CustomerAdapter(this, caList);
         listViewCustomer.setAdapter(adapter);
         Toast.makeText(getApplicationContext(), "Count :" + caList.size(), Toast.LENGTH_SHORT).show();
+    }
+
+    public void getDirect(View v){
+        String uri = String.format(Locale.ENGLISH, "geo:0,0?q=%s", address);
+        Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
+        mapIntent.setPackage("com.google.android.apps.maps");
+        startActivity(mapIntent);
     }
 
 
