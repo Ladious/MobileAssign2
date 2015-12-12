@@ -33,4 +33,18 @@
     <string name="get_course_url">http://xladious.netau.net/select_customer.php</string>
     <string name="id">Id</string>
     <string name="title_activity_send_case">sendCase</string>
+
+    <string name="title_activity_customer">Customer</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="action_example">Example action</string>
+    <string name="title_activity_main1">MainActivity1</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_activity_main3">MainActivity3</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_client_menu">ClientMenu</string>
 </resources>
