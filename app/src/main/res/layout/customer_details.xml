@@ -230,7 +230,8 @@
             android:textColor="#ffffff"
             android:layout_alignParentTop="true"
             android:layout_toRightOf="@+id/btnSendFeedback"
-            android:layout_toEndOf="@+id/btnSendFeedback" />
+            android:layout_toEndOf="@+id/btnSendFeedback"
+            android:onClick="doHistory" />
     </LinearLayout>
 
 </LinearLayout>

@@ -31,6 +31,7 @@
     <string name="view">View Feedback</string>
     <string name="send">Send Feedback</string>
     <string name="get_course_url">http://xladious.netau.net/select_customer.php</string>
+    <string name="get_history_url">http://xladious.netau.net/select_history.php</string>
     <string name="id">Id</string>
     <string name="title_activity_send_case">sendCase</string>
 
@@ -49,4 +50,7 @@
     <string name="title_activity_client_menu">ClientMenu</string>
     <string name="title_activity_purchase_history">Purchase History</string>
     <string name="purchaseHistory">Purchase History</string>
+    <string name="orderno">Order No:</string>
+    <string name="productname">Product Name:</string>
+    <string name="productqty">Product Quantity:</string>
 </resources>

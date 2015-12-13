@@ -31,6 +31,7 @@ public class CustomerDetails extends AppCompatActivity {
     private ProgressDialog pDialog;
     private static String address;
     private static int pid;
+    private static String id;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -84,7 +85,7 @@ public class CustomerDetails extends AppCompatActivity {
                            // for(int i=0; i < response.length();i++){
                             //pass position here
                                 JSONObject courseResponse = (JSONObject) response.get(pid);
-                                String id = courseResponse.getString("id");
+                                id = courseResponse.getString("id");
                                 String name = courseResponse.getString("name");
                                 address = courseResponse.getString("address");
                                 String phone = courseResponse.getString("phone");
@@ -136,6 +137,13 @@ public class CustomerDetails extends AppCompatActivity {
         Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
         mapIntent.setPackage("com.google.android.apps.maps");
         startActivity(mapIntent);
+    }
+
+    public void doHistory(View v){
+        Intent intent = new Intent(this, PurchaseHistory.class);
+        intent.putExtra("ID",id);
+        startActivity(intent);
+
     }
 
 
